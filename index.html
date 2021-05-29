@@ -29,6 +29,36 @@
           h3 {
               font-family: Arial;
       }
+      
+        .wrapper {
+            height: 10vh;
+            /*This part is important for centering*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .typing-demo {
+            width: 22ch;
+            animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid;
+            font-family: Arial;
+            font-size: 2em;
+          }
+
+          @keyframes typing {
+            from {
+              width: 0
+            }
+          }
+
+          @keyframes blink {
+            50% {
+              border-color: transparent
+            }
+          }
 
 /* Style the tab */
 .tab {
@@ -72,7 +102,12 @@
   <body style="background-color:#b8f5ed; text-align:center; font-family:Garamond">
 <img src="tpglogo.png" width="700" height="196">    <!-- (“File:The Powerpuff Girls logo.svg - Wikipedia” 2014) -->
   <h1>POWERPUFF GIRLS</h1>
-    <p style="font-size:20px; text-align: center">Welcome to our group website! Please select a section.</p>
+    <p style="font-size:20px; text-align: center"></p>
+
+    <div class="wrapper">
+      <div class="typing-demo">
+  Welcome to our group website! Please select a section.
+  </div>
 
   <div class="tab">
     <button class="tablinks" onclick="openSection(event, 'Team Profile')">Team Profile</button>
