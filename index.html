@@ -30,35 +30,6 @@
               font-family: Arial;
       }
       
-        .wrapper {
-            height: 18vh;
-            /*This part is important for centering*/
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-
-          .typing-demo {
-            width: 100ch;
-            animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-            white-space: nowrap;
-            overflow: hidden;
-            border-right: 3px solid;
-            font-family: Arial;
-            font-size: 18px;
-          }
-
-          @keyframes typing {
-            from {
-              width: 0
-            }
-          }
-
-          @keyframes blink {
-            50% {
-              border-color: transparent
-            }
-          }
 
 /* Style the tab */
 .tab {
@@ -102,14 +73,12 @@
   <body style="background-color:#b8f5ed; text-align:center; font-family:Garamond">
 <img src="tpglogo.png" width="700" height="196">    <!-- (“File:The Powerpuff Girls logo.svg - Wikipedia” 2014) -->
   <h1>POWERPUFF GIRLS</h1>
-    <p style="font-size:20px; text-align: center"></p>
+    <p style="font-size:20px; text-align: center">Welcome to our group website! Please select a section.</p>
 
-    <div class="wrapper"; margin: 35px 100px 35px;>
-      <div class="typing-demo">
-  Welcome to our group website! Please select a section.
+  
   </div>
 
-  <div class="tab"; margin: 100px 100px ;>
+  <div class="tab">
     <button class="tablinks" onclick="openSection(event, 'Team Profile')">Team Profile</button>
     <button class="tablinks" onclick="openSection(event, 'Tools')">Tools</button>
     <button class="tablinks" onclick="openSection(event, 'Project Description - Overview')">Project Description - Overview</button>
